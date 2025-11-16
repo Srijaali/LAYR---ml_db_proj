@@ -1,23 +1,29 @@
-# Python
+# Ignore all CSV files
+*.csv
+
+# If you only want to ignore large dataset folder and not every CSV:
+# data/new_data/*.csv
+
+# Common Python ignores
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-venv/
+.env
+.venv/
 env/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# OS
-.DS_Store
-
-# Logs
+venv/
+ENV/
+build/
+dist/
 *.log
 
-# Large datasets
-data/hm/*.csv
-/datasets/
+# VSCode
+.vscode/
+
+data/new_data/*.csv
+
+
+
+# Ignore entire database folder (contains large datasets)
+data/
